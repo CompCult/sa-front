@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { routing } from './app.routing';
 
@@ -45,6 +45,7 @@ import { AppointmentService } from './appointments/appointment.service';
 import { NewAppointmentsComponent } from './appointments/new-appointments/new-appointments.component';
 import { AppointmentRequestComponent } from './appointment-request/appointment-request.component';
 import { InitialPageComponent } from './initial-page/initial-page.component';
+import { TeacherManual } from './teacher-manual/TeacherManual.component'
 
 
 
@@ -67,6 +68,7 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     NewAppointmentsComponent,
     AppointmentRequestComponent,
     InitialPageComponent,
+    TeacherManual,
 
   ],
   imports: [
@@ -95,7 +97,7 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
     SearchService
 
   ],
-  entryComponents:[
+  entryComponents: [
     NewUsersComponent,
     NewQuizComponent,
     EvaluationQuizComponent,

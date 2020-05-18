@@ -15,33 +15,33 @@
 
 
       <li *ngIf="showMenu" ngbDropdown class="d-inline-block ">
-        <a class="nav-link"  id="dropdownBasic4" routerLinkActive="active"  ngbDropdownToggle >
+        <a class="nav-link" id="dropdownBasic4" routerLinkActive="active" ngbDropdownToggle>
           Quiz
         </a>
 
         <div ngbDropdownMenu aria-labelledby="dropdownBasic4">
           <button class="dropdown-item" routerLink="quiz">Quiz</button>
           <hr>
-          <button class="dropdown-item" routerLink="quizAnswer">Respostas Quizzes</button>
+          <button class="dropdown-item" routerLink="quizAnswer">Resultados dos Quizzes</button>
         </div>
 
       </li>
 
       <li *ngIf="showMenu" ngbDropdown class="d-inline-block ">
-        <a class="nav-link"  id="dropdownBasic5" routerLinkActive="active"  ngbDropdownToggle >
+        <a class="nav-link" id="dropdownBasic5" routerLinkActive="active" ngbDropdownToggle>
           Missões
         </a>
 
         <div ngbDropdownMenu aria-labelledby="dropdownBasic5">
-          <button class="dropdown-item" routerLink="missson">Missões</button>
+          <button class="dropdown-item" routerLink="missson">Missões Criadas</button>
           <hr>
-          <button class="dropdown-item" routerLink="missionAnswer">Respostas Missões</button>
+          <button class="dropdown-item" routerLink="missionAnswer">Resultados das Missões</button>
         </div>
 
       </li>
 
       <li *ngIf="showMenu" ngbDropdown class="d-inline-block ">
-        <a class="nav-link"  id="dropdownBasic4" routerLinkActive="active"  ngbDropdownToggle >
+        <a class="nav-link" id="dropdownBasic4" routerLinkActive="active" ngbDropdownToggle>
           Agenda
         </a>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic4">
@@ -51,11 +51,15 @@
         </div>
       </li>
 
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="teacherManual">Manual do Professor<span class="sr-only">(current)</span></a>
+      </li>
+
     </ul>
 
     <ul class="navbar-nav navbar-right">
       <div class="navbar-right nav-item">
-        <a class="nav-link" routerLink="login" (click) = "logout()" >{{loginMensage}}</a>
+        <a class="nav-link" routerLink="login" (click)="logout()">{{loginMensage}}</a>
       </div>
     </ul>
   </div>
@@ -71,6 +75,6 @@
 </section>
 
 
-<footer >
+<footer>
   <span style="color: white">@Comcult - inovar aplication - 2018</span>
 </footer>
